@@ -1,0 +1,285 @@
+/* General reset for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Body styling */
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-color: #D5FFFF;
+    margin: -30px;
+    padding: 0px 5px 5px 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header text alignment */
+header h1, h2, h3, h4, ol, dl, strong, blockquote {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Header styling */
+.header {
+    padding-top: 15px;
+    margin: -5px 15px 10px 15px;
+    padding-bottom: 0;
+    padding-left: .64%;
+    background-color: darkcyan;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar, .navbar2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li, .navbar2 li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar a, .navbar2 a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.navbar a:hover, .navbar2 a:hover {
+    background-color: #edf6f9;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 700px) {
+    .navbar {
+        text-align: left;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Horizontal line styling */
+hr, hr.full-width-hr {
+    border: none;
+    height: 2px;
+    color: black;
+    background-color: black;
+    width: 100vw;
+}
+
+hr.full-width-hr {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 2px solid black;
+}
+
+/* Line breaks */
+br {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 3px;
+    line-height: 4px;
+}
+
+/* Paragraph styling */
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Contact list styling */
+.contact ul, .contact li {
+    border-style: double;
+}
+
+/* Unordered list and list item styling */
+ul, li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Blockquote styling */
+blockquote {
+    font-size: 1.25rem;
+    padding: 50px 20px 30px 50px;
+    text-align: center;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    border: 5px solid darkcyan;
+}
+
+/* Projects section styling */
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Dogs section styling */
+.Dogs {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.Dogs p {
+    margin: 10px 0;
+}
+
+/* Pet section styling */
+.pet {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.pet img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.pet h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.pet p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Home section styling */
+.home {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.home dt {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+/* About section styling */
+.about {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about h1 {
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+.about p {
+    margin: 20px 0;
+}
+
+.about .image-container {
+    display: flex;
+    justify-content: space-between; /* Space between the images */
+    gap: 20px; /* Optional: Adjust the gap between images */
+    margin-top: 20px; /* Adds some space above the images */
+}
+
+.about img {
+    width: 30%; /* Adjusts the width of the images to fit side by side */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.contact {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    font-style: italic;
+    font-size: 12px;
+    color: #888;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* space between the images */
+}
